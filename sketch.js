@@ -40,7 +40,7 @@ class Player {
     this.dashCharges = 1;
     this.dashChargesMax = 1;
     this.dashCooldown = 0;
-    this.dashCooldownMax = 10;
+    this.dashCooldownMax = 300;
     this.invincible = 0;
   }
 
@@ -604,7 +604,7 @@ function generateCards() {
     return { id: u.id, name: u.name, rarity: rarity, val: tier.val, label: tier.label };
   });
 }
-
+//dash cooldown
 function applyUpgrade(card, player, gameState, xpMultRef) {
   if (card.id === 'swift')    player.speed += card.val;
   if (card.id === 'bulk') {
