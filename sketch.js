@@ -604,7 +604,7 @@ function generateCards() {
     return { id: u.id, name: u.name, rarity: rarity, val: tier.val, label: tier.label };
   });
 }
-//dash cooldown
+
 function applyUpgrade(card, player, gameState, xpMultRef) {
   if (card.id === 'swift')    player.speed += card.val;
   if (card.id === 'bulk') {
